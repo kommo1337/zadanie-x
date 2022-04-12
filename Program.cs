@@ -7,14 +7,12 @@ namespace zadanie_x
         static void Main(string[] args)
         {
             int[] array = new int[5];
+            Random rand = new();
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = Convert.ToInt32(Console.ReadLine());
+                array[i] = rand.Next();
             }
-            foreach (var item in array)
-            {
-                Console.WriteLine(item);
-            }
+
         }
     }
 }
