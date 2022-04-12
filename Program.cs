@@ -6,25 +6,17 @@ namespace zadanie_x
     {
         static void Main(string[] args)
         {
-            int[] array = {1,3,6,7,15 };
-            int max = 0;
-            int min = 0;
-            int j;
-
-            for (int i = 0; i < array.Length; i++)
+            int[] array = { 1, 3, 5, 2 };
+            Summ(array);
+        }
+        static void Summ(int[] array)
+        {
+            int sum = 0;
+            for (int i = 0; i < array.Length-1; i++)
             {
-                if (array[i] < array[min])
-                    min = i;
-                else if (array[i] > array[max])
-                    max = i;
+                sum += array[i];
             }
-            j = array[min];
-            array[min] = array[max];
-            array[max] = j;
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine(array[i]);
-            }
+            Console.WriteLine(sum);
         }
     }
 }
