@@ -6,9 +6,14 @@ namespace zadanie_x
     {
         static void Main(string[] args)
         {
-            while (true)
+            int[] array = new int[5];
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine(1);
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            foreach (var item in array)
+            {
+                Console.WriteLine(item);
             }
         }
     }
