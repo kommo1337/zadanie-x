@@ -6,13 +6,15 @@ namespace zadanie_x
     {
         static void Main(string[] args)
         {
-            int[] array = new int[5];
-            Random rand = new();
+            int[] array = {1,3,6,7,15 };
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = rand.Next();
+                if (array[i]%2==0)
+                {
+                    Console.WriteLine(array[i]);
+                    break;
+                }
             }
-
         }
     }
 }
