@@ -7,15 +7,15 @@ namespace zadanie_x
         static void Main(string[] args)
         {
             int[] array = {1,3,6,7,15 };
-            int res = 0;
-            for (int i = 0; i < array.Length; i++)
+            int[] small = new int[array.Length - 1];
+            for (int i = 0; i < small.Length; i++)
             {
-                if (array[i]%2!=0)
-                {
-                    res += array[i];
-                }
+                small[i] = array[i];
             }
-            Console.WriteLine(res);
+            for (int i = 0; i < small.Length; i++)
+            {
+                Console.WriteLine(small[i]);
+            }
         }
     }
 }
