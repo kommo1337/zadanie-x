@@ -2,6 +2,14 @@
 
 namespace zadanie_x
 {
+    enum Name
+    {
+        Dima,
+        Sergey,
+        Vladimir,
+        Maria,
+        Olga
+    }
     class Program
     {
         static void Main(string[] args)
