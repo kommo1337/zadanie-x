@@ -7,16 +7,22 @@ namespace zadanie_x
         static void Main(string[] args)
         {
             int[] array = { 1, 3, 5, 2 };
-            Summ(array);
+            Console.WriteLine(Multyplay());
         }
-        static void Summ(int[] array)
+        static int Multyplay()
         {
-            int sum = 0;
-            for (int i = 0; i < array.Length-1; i++)
+            Random rand = new();
+            int[] array = new int[5];
+            int res = 1;
+            for (int i = 0; i < array.Length; i++)
             {
-                sum += array[i];
+                array[i] = rand.Next();
             }
-            Console.WriteLine(sum);
+            for (int i = 0; i < array.Length; i++)
+            {
+                res *= array[i];
+            }
+            return res;
         }
     }
 }
