@@ -8,8 +8,10 @@ namespace zadanie_x
         {
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
-            int c = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(a*b*c);
+            if (a>b)
+                Console.WriteLine(a);
+            else
+                Console.WriteLine(b);
         }
     }
 }
