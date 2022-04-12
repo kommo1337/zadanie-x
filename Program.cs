@@ -6,10 +6,10 @@ namespace zadanie_x
     {
         static void Main(string[] args)
         {
-            int a = 7;
-            Console.WriteLine(a*a);
-            Console.WriteLine(12%4);
-
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(a*b*c);
         }
     }
 }
